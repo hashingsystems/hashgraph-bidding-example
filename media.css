@@ -1,0 +1,276 @@
+@media screen and (min-width: 1025px) and (max-width: 1100px){
+
+}
+
+@media screen and (min-width: 1025px) and (max-width: 1100px){
+    .desp {
+        padding: 9px 0 0;
+    }
+
+    .rectangle-copy {
+        width: 145px;
+    }
+
+    .rectangle-right {
+        padding: 18px 62px;
+    }
+
+    .Lorem-ipsum {
+        margin-bottom: 25px;
+    }
+
+    .s-bid { 
+        line-height: 3.6;
+    }
+
+    .content {
+        top: 166px;
+    }
+}
+
+@media screen and (min-width:768px) and (max-width:1024px){
+    .wrapper {
+        width: 90%;
+    }
+
+    .header-example {
+        font-size: 47px;
+    }
+
+    .bidding-process {
+        font-size: 24px;
+    }
+
+    .product-title h4 { 
+        font-size: 28px;
+        padding: 64px 32px;
+    }
+
+    .content {
+        top: 156px;
+    }
+
+    .lot {
+        font-size: 22px;
+    }
+
+    .desp {
+        padding: 0px 0 0;
+        font-size: 14px;
+    }
+
+    .Lorem-ipsum {
+        margin-bottom: 37px;
+        font-size: 14px;
+    }
+    
+
+    .s-bid {
+        font-size: 20px;
+        line-height: 1.9;
+    }
+
+    .s-bid-10 {
+        padding: 0 4px;
+        font-size: 20px;
+    }
+
+    .rectangle-copy {
+        width: 130px;
+        padding: 18px 0px;
+    }
+
+    .rectangle-right {
+        padding: 16px 49px;
+    }
+
+    .banner-year {
+        padding-right: 22px;
+    }
+
+    .sec_banner {
+        display: flex;
+        align-items: stretch;
+        min-height: 455px;
+    }
+}
+
+
+@media screen and (min-width: 899px) and (max-width: 900px){
+    .wrapper {
+        width: 90%;
+    }
+
+    .header-example {
+        font-size: 42px;
+    }
+
+    .bidding-process {
+        font-size: 21px;
+    }
+
+    .product-title h4 {
+        font-size: 25px;
+        padding: 56px 27px;
+    }
+
+    .desp {
+        padding: 0px 0 0;
+        line-height: 1;
+        font-size: 13px;
+    }
+
+    .Lorem-ipsum {
+        margin-bottom: 25px;
+        font-size: 12px;
+    }
+
+    .s-bid {
+        line-height: 1.9;
+        font-size: 17px;
+    }
+
+    .s-bid-10 {
+        font-size: 17px;
+        padding: 0 8px;
+    }
+
+    .place-bid {
+        font-size: 14px;
+    }
+
+    .content {
+        top: 151px;
+    }
+
+    .lot {
+        font-size: 20px;
+    }
+
+    .rectangle-copy {
+        width: 107px; 
+        padding: 16px 0px;
+    }
+
+    .rectangle-right {
+        padding: 14px 40px;
+    }
+
+    .banner-year { 
+        padding-right: 18px;
+        position: absolute;
+        margin: 0 -8px
+    }
+
+    .spaces {
+        margin: 0;
+        padding: 0;
+        position: relative;
+    }
+
+    .banner-hours {
+        position: absolute;
+        margin: 0 -25px;
+    }
+
+    .border-center {
+        margin: 0;
+        padding: 0;
+        position: relative;
+    }
+
+    .sec_banner {
+        display: flex;
+        align-items: stretch;
+        min-height: 405px;
+    }
+}
+
+@media screen and (min-width: 799px) and (max-width: 800px){
+    .header-example {
+        font-size: 36px;
+    }
+
+    .bidding-process {
+        font-size: 19px;
+    }
+ 
+
+    .product-title h4 {
+        padding: 69px 23px;
+        font-size: 22px;
+    }
+
+    .content {
+        top: 153px;
+    }
+
+    .desp {
+        padding: 0px 0 0;
+        font-size: 13px;
+    }
+
+    .Lorem-ipsum {
+        margin-bottom: 8px;
+        font-size: 10px;
+    }
+
+    .s-bid {
+        line-height: 2;
+        font-size: 15px;
+    }
+
+    .s-bid-10 { 
+        font-size: 15px; 
+        padding: 0 4px;
+    }
+
+    
+
+    .lot {
+        font-size: 20px;
+    }
+
+    .rectangle-copy {
+        width: 95px;
+        padding: 10px 0px;
+    }
+
+    .rectangle-right {
+        padding: 8px 35px;
+    }
+
+    .place-bid {
+        font-size: 13px;
+    }
+
+    .sec_banner {
+        display: flex;
+        align-items: stretch;
+        min-height: 370px;
+    }
+
+    .spaces {
+        margin: 0;
+        padding: 0;
+        position: relative;
+    }
+
+    .banner-hours {
+        position: absolute;
+        margin: 0px -43px;
+    }
+
+.border-center {
+    margin: 0;
+    padding: 0;
+    position: relative;
+}
+
+.banner-year { 
+    padding-right: 27px;
+    position: absolute;
+    margin: 0 -11px;
+}
+
+}

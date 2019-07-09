@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Hashgraph</title>  
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">   
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+        <link href="https://fonts.googleapis.com/css?family=Montserrat+Subrayada:400,700|Montserrat:100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900&display=swap" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href="style.css"> 
+        <link rel="stylesheet" type="text/css" href="media.css"> 
+        <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"> 
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script  type="text/javascript" src="js/main.js"></script>
+
+       
+    </head>
+    <body>
+             
+        <!-- HEADER_SECTION -->
+            <div class="wrapper">
+                <h1 class="header-example">HEDERA EXAMPLE</h1>
+                <h4 class="bidding-process">OF FAIR BIDDING PROCESS</h4>
+            </div>
+        <!-- CLOSE -->
+
+        <!-- SECTION_1 -->
+        <div class="back">
+        <div class="product-title">
+            <div class="wrapper">
+                <div class="row">
+                    <div class="col-md-4">
+
+                    </div>
+
+                    <div class="col-md-3">
+
+                    </div>
+
+                    <div class="col-md-5">
+                        <h4>Product Title</h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+         
+        <div class="wrapper">
+            <div class="row sec_banner">
+                <div class="col-md-7">
+                    <img src="images/img1.png" alt="" class="image-rectangle">
+                </div>
+
+                <div class="col-md-5 content">
+                    <h6 class="lot offset-1">Lot 1</h6>
+                    <P class="desp offset-1">Description</P>
+                    <p class="Lorem-ipsum offset-1">Lorem ipsum dolor sit amet consectetur
+                         adipiscing elit. Sed euismod suscipit condimentum.</p>
+                    <div>
+                        <span class="s-bid offset-1">Starting Bid</span> 
+                        <span class="s-bid-10">10£</span>  
+                    </div>
+                    
+                    <div class="rectangle-copy offset-1">
+                        <div>
+                        <span class="minus" id="subbtn" onclick="incDec('dec')"><i class="fa fa-minus"></i></span>
+                        <span class="rectangle-num"><span id="bidRate">0</span>£</span>
+                        <span class="plus" id="addBtn" onclick="incDec('inc')"><i class="fa fa-plus"></i></span>
+                    </div>    
+                    </div>
+
+                    <div class="rectangle-right">
+                        <span class="place-bid">PLACE BID</span>
+                    </div>
+                </div>
+            </div>
+
+            <div>
+                <h3 class="bidding-history">BIDDING HISTORY</h3>
+            </div>
+
+            
+             <!-- <div class="rectangle-border">
+                  <div class="row row-details">
+                        <div class="crat-img"><img src="images/img2.png"></div>
+                        <div class="main-banner">
+                            <span class="acc">Account</span>
+                            <span class="account-text">0.0.1761</span>
+                        </div>
+                        <div class="banner-hours">5:32pm</div>
+                        <div  class="banner-year">June 19th,2019</div>
+                     <div class="banner-count">5£</div>
+                    </div>
+                </div>  -->
+                <div id="container-Append">
+            <!-- <div class="rectangle-border"> 
+                    <div class="row row-details">
+                        <div class="col-md-7">
+                            <div class="row">
+                                <div class="col-md-2 crat-img">
+                                    <img src="images/img2.png">
+                                </div>
+        
+                                <div class="col-md-10">
+                                        <span class="acc">Account</span>
+                                        <span class="account-text">0.0.1761</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-5">
+                            <div class="row">
+                                <div class="col-md-3 spaces">
+                                    <div class="banner-hours">5:32pm</div>
+                                </div>
+
+                                <div class="col-md-6 border-center"> 
+                                    <div  class="banner-year">June 19th,2019</div>
+                                </div> 
+
+                                <div class="col-md-3 dollor">
+                                    <div class="banner-count">5£</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="rectangle-border">
+                        <div class="row row-details">
+                            <div class="col-md-7">
+                                <div class="row">
+                                    <div class="col-md-2 crat-img">
+                                        <img src="images/img2.png">
+                                    </div>
+            
+                                    <div class="col-md-10">
+                                            <span class="acc">Account</span>
+                                            <span class="account-text">0.0.1761</span>
+                                    </div>
+                                </div>
+                            </div>
+    
+                            <div class="col-md-5">
+                                <div class="row">
+                                    <div class="col-md-3 spaces">
+                                        <div class="banner-hours">10:30pm</div>
+                                    </div>
+    
+                                    <div class="col-md-6 border-center"> 
+                                        <div  class="banner-year">June 18th,2019</div>
+                                    </div> 
+    
+                                    <div class="col-md-3 dollor">
+                                        <div class="banner-count">10£</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                </div>
+
+                <div class="rectangle-border">
+                        <div class="row row-details">
+                            <div class="col-md-7">
+                                <div class="row">
+                                    <div class="col-md-2 crat-img">
+                                        <img src="images/img2.png">
+                                    </div>
+            
+                                    <div class="col-md-10">
+                                            <span class="acc">Account</span>
+                                            <span class="account-text">0.0.1761</span>
+                                    </div>
+                                </div>
+                            </div>
+    
+                            <div class="col-md-5">
+                                <div class="row">
+                                    <div class="col-md-3 spaces">
+                                        <div class="banner-hours">6:50pm</div>
+                                    </div>
+    
+                                    <div class="col-md-6 border-center"> 
+                                        <div  class="banner-year">June 17th,2019</div>
+                                    </div> 
+    
+                                    <div class="col-md-3 dollor">
+                                        <div class="banner-count">50£</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                </div>
+
+                <div class="rectangle-border">
+                        <div class="row row-details">
+                            <div class="col-md-7">
+                                <div class="row">
+                                    <div class="col-md-2 crat-img">
+                                        <img src="images/img2.png">
+                                    </div>
+            
+                                    <div class="col-md-10">
+                                            <span class="acc">Account</span>
+                                            <span class="account-text">0.0.1761</span>
+                                    </div>
+                                </div>
+                            </div>
+    
+                            <div class="col-md-5">
+                                <div class="row">
+                                    <div class="col-md-3 spaces">
+                                        <div class="banner-hours">1:00pm</div>
+                                    </div>
+    
+                                    <div class="col-md-6 border-center"> 
+                                        <div  class="banner-year">June 16th,2019</div>
+                                    </div> 
+    
+                                    <div class="col-md-3 dollor">
+                                        <div class="banner-count">100£</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                </div>
+
+                <div class="rectangle-border">
+                        <div class="row row-details">
+                            <div class="col-md-7">
+                                <div class="row">
+                                    <div class="col-md-2 crat-img">
+                                        <img src="images/img2.png">
+                                    </div>
+            
+                                    <div class="col-md-10">
+                                            <span class="acc">Account</span>
+                                            <span class="account-text">0.0.1761</span>
+                                    </div>
+                                </div>
+                            </div>
+    
+                            <div class="col-md-5">
+                                <div class="row">
+                                    <div class="col-md-3 spaces">
+                                        <div class="banner-hours">5:20pm</div>
+                                    </div>
+    
+                                    <div class="col-md-6 border-center"> 
+                                        <div  class="banner-year">June 15th,2019</div>
+                                    </div> 
+    
+                                    <div class="col-md-3 dollor">
+                                        <div class="banner-count">999£</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                </div>
+
+                <div class="rectangle-border">
+                        <div class="row row-details">
+                            <div class="col-md-7">
+                                <div class="row">
+                                    <div class="col-md-2 crat-img">
+                                        <img src="images/img2.png">
+                                    </div>
+            
+                                    <div class="col-md-10">
+                                            <span class="acc">Account</span>
+                                            <span class="account-text">0.0.1761</span>
+                                    </div>
+                                </div>
+                            </div>
+    
+                            <div class="col-md-5">
+                                <div class="row">
+                                    <div class="col-md-3 spaces">
+                                        <div class="banner-hours">3:45pm</div>
+                                    </div>
+    
+                                    <div class="col-md-6 border-center"> 
+                                        <div  class="banner-year">June 14th,2019</div>
+                                    </div> 
+    
+                                    <div class="col-md-3 dollor">
+                                        <div class="banner-count">5£</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                </div> 
+                </div> -->
+              
+                </div> 
+                </div> 
+                </div>  
+    </body>
+</html>
