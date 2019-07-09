@@ -204,6 +204,7 @@
     background-color: #0074cd;
     float: right;
     padding: 18px 78px;
+    cursor:pointer;
 }
 
 .place-bid {
@@ -338,6 +339,14 @@
 
 .col-md-7.rm-pd {
     padding-left: 0px!important;
+}
+
+p.n-t-s {
+    text-align: center;
+    font-size: 20px;
+    font-family: sans-serif;
+    /* margin-bottom: 10px; */
+    margin-top: 20px;
 }
  
 
