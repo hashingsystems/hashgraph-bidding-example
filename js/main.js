@@ -142,7 +142,6 @@ function payForBid(amount) {
     attrID: 'article-1',
   });
 }
-Collapse
 
 
 
