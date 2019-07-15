@@ -133,7 +133,7 @@
 }
 
 .s-bid-10 {
-    padding: 0 20px;
+    /* padding: 0 20px; */
     font-family: Montserrat;
     font-size: 24px;
     font-weight: bold;
@@ -142,6 +142,7 @@
     line-height: normal;
     letter-spacing: normal; 
     color: #0074cd;
+    line-height: 4;
 }
 
 .rectangle-copy>div {
@@ -156,14 +157,15 @@
 }
 
 .rectangle-copy {
-    padding: 19px 0px;
-    width: 162px;
+    /* padding: 19px 0px; */
+    height: 61px;
+    /* width: 162px; */
     border: solid 1px #dddddd; 
     display: flex;
     justify-content: space-around;
     text-align: center;
     align-items: center;
-    display: inline-block;
+    /* display: inline-block; */
 }
 
 .minus {
@@ -175,6 +177,7 @@
     line-height: normal;
     letter-spacing: normal; 
     color: #555555;
+    cursor: pointer;
 }
 
 .rectangle-num {
@@ -198,12 +201,16 @@
     line-height: normal;
     letter-spacing: normal; 
     color: #555555;
+    cursor: pointer;
 }
 
 .rectangle-right {
     background-color: #0074cd;
-    float: right;
-    padding: 18px 78px;
+    /* float: right;
+    padding: 18px 78px; */
+    height: 61px;
+    padding-top: 19px;
+    text-align: center;
     cursor:pointer;
 }
 

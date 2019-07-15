@@ -55,24 +55,43 @@
                 <div class="col-md-5 content">
                     <h6 class="lot offset-1">Lot 1</h6>
                     <P class="desp offset-1">Description</P>
-                    <p class="Lorem-ipsum offset-1">Lore ipsu dolor sit amet consectetur
+                    <p class="Lorem-ipsum offset-1">Lorem ipsu dolor sit amet consectetur
                         adipiscing elit. Sed euismod suscipit condimentum.</p>
-                    <div>
+                    <!-- <div>
                         <span class="s-bid offset-1">Starting Bid</span>
                         <span class="s-bid-10">1£</span>
-                    </div>
+                    </div> -->
 
-                    <div class="rectangle-copy offset-1">
+                    <!-- <div class="rectangle-copy offset-1">
                         <div>
                             <span class="minus" id="subbtn" onclick="incDec('dec')"><i class="fa fa-minus"></i></span>
                             <span class="rectangle-num"><span id="bidRate">0</span>£</span>
                             <span class="plus" id="addBtn" onclick="incDec('inc')"><i class="fa fa-plus"></i></span>
                         </div>
-                    </div>
+                    </div> -->
 
-                    <div id="bidBtn" class="rectangle-right">
+                    <!-- <div id="bidBtn" class="rectangle-right">
                         <span class="place-bid">PLACE BID</span>
-                    </div>
+                    </div> -->
+
+
+                    <div class="row">
+                        <div class="col-md-5  offset-1">
+                                <span class="s-bid">Starting Bid</span> 
+                            <div class="rectangle-copy">
+                            <span class="minus" id="subbtn" onclick="incDec('dec')"><i class="fa fa-minus"></i></span>
+                            <span class="rectangle-num"><span id="bidRate">0</span>£</span>
+                            <span class="plus" id="addBtn" onclick="incDec('inc')"><i class="fa fa-plus"></i></span>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                                <span  class="s-bid-10"><span id="min-bid"></span>£</span>  
+                             <div class="rectangle-right" id="bidBtn" onclick="onBtnClick()">
+                            <span class="place-bid">PLACE BID</span>
+                             </div>
+                        </div>
+                     </div>
+
                 </div>
             </div>
 

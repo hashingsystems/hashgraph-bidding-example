@@ -1,18 +1,30 @@
 const getBidsURL = 'https://mps.hashingsystems.com/memo/hedera-bidding-example?limit=1000';
+
 let bidRate = 0;
 var intialBid = 1;
 
-$('document').ready(function () {
+function onBtnClick() {
+  bidRate = $('#bidRate')[0].innerText;
+    window.localStorage.setItem("bid", bidRate);
+    console.log("BID:::", bidRate);
+    window.location.reload();
+}
 
-  $('#bidBtn').click(function () {
-    bidRate = $('#bidRate')[0].innerText;
-    payForBid(bidRate);
-  });
+$('document').ready(function () {
+  let bid = window.localStorage.getItem("bid");
+  if(bid > 0) {
+    payForBid(bid);
+  }
 
   fetch(getBidsURL)
     .then((resp) => resp.json())
     .then(function (data) {
       if (data && data.success === true && data.response && data.response.length > 0) {
+        intialBid =  convesrtInFiat(data.response[0].cost) + 1;
+        $('#bidRate')[0].innerHTML = intialBid;
+        if(document.querySelector('#min-bid')) {
+          document.querySelector('#min-bid').innerHTML = intialBid;
+        }
         populateBidList(data.response);
       } else {
         $("#container-Append").empty();
@@ -23,8 +35,6 @@ $('document').ready(function () {
       $("#container-Append").empty();
       $('#container-Append').append('<p  class="n-t-s">Something went wrong, please try again!</p>')
     });
-
-  $('#bidRate')[0].innerHTML = intialBid;
 });
 
 function populateBidList(bidingList) {
@@ -116,21 +126,23 @@ function getFormattedDate(timestamp) {
   return formattedDate;
 }
 
-(function (_h, a, s, h, g, ra, ph) {
-  _h['MPS-JS'] = h;
-  _h[h] = _h[h] || function () {
-    (_h[h].q = _h[h].q || []).push(arguments)
-  }; ra = a.createElement(s),
-    ph = a.getElementsByTagName(s)[0];
-  ra.id = h;
-  ra.src = g;
-  ra.async = 1;
-  console.log(ra);
-  console.log(ph);
-  ph.parentNode.insertBefore(ra, ph);
-}(window, document, 'script', 'mw', 'https://api.hashingsystems.com/js/widget.js'));
+
 
 function payForBid(amount) {
+  (function (_h, a, s, h, g, ra, ph) {
+    _h['MPS-JS'] = h;
+    _h[h] = _h[h] || function () {
+      (_h[h].q = _h[h].q || []).push(arguments)
+    }; ra = a.createElement(s),
+      ph = a.getElementsByTagName(s)[0];
+    ra.id = h;
+    ra.src = g;
+    ra.async = 1;
+    console.log(ra);
+    console.log(ph);
+    ph.parentNode.insertBefore(ra, ph);
+  }(window, document, 'script', 'mw', 'https://api.hashingsystems.com/js/widget.js'));
+
   let tinybars = convertInHbar(amount);
   console.log("Kirti payForBid :- ", amount, tinybars);
   window.mw('init', {
@@ -141,6 +153,10 @@ function payForBid(amount) {
     memo: 'hedera-bidding-example',
     attrID: 'article-1',
   });
+
+  setTimeout(() => {
+    window.localStorage.setItem("bid", 0);
+  }, 5000);
 }
 
 
