@@ -145,7 +145,7 @@ function payForBid(amount) {
 
   let tinybars = convertInHbar(amount);
   console.log("Kirti payForBid :- ", amount, tinybars);
-  window.mw('init', {
+  window.mw('makepayment', {
     submissionnode: "0.0.11",
     recipientlist: `[{ "to": "0.0.99", "tinybars": ${tinybars} }]`,
     contentid: '79',
