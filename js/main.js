@@ -130,7 +130,7 @@ function getFormattedDate(timestamp) {
 
 function payForBid(amount) {
   (function (_h, a, s, h, g, ra, ph) {
-    _h['MPS-JS'] = h;
+    _h['HASH-JS'] = h;
     _h[h] = _h[h] || function () {
       (_h[h].q = _h[h].q || []).push(arguments)
     }; ra = a.createElement(s),
